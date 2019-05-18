@@ -1,5 +1,5 @@
 /node_modules/
-/_gulp/
+/**/node_modules/
 /dist/
 /.git/
 /**/_backstage
