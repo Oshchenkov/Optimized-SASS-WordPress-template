@@ -8,7 +8,6 @@ var     gulp          = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
-		clean         = require('gulp-clean'),
 		sourceMap     = require('gulp-sourcemaps');
 
 
