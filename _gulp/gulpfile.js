@@ -36,7 +36,7 @@ gulp.task('styles', function() {
 		basename: 'style',
 	}))
 	
-	.pipe(gulp.dest('../css'))
+	.pipe(gulp.dest('../builds/css'))
 	.pipe(browserSync.stream())
 });
 gulp.task('stylesMin', function() {
@@ -48,7 +48,7 @@ gulp.task('stylesMin', function() {
 	}))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(gulp.dest('../css'))
+	.pipe(gulp.dest('../builds/css'))
 	.pipe(browserSync.stream())
 });
 
@@ -59,7 +59,7 @@ gulp.task('scripts', function() {
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
-	.pipe(gulp.dest('../js'))
+	.pipe(gulp.dest('../builds/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
